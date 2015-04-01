@@ -231,3 +231,61 @@ while dnv == "sim" and len(lista) != 0:
                     erros += 1
                     tentativas.append(chutee)
                     print("Que burro da 0 pra ele ")    
+                      
+            if erros == 1 and e1 == 0:
+                tartarugac.setheading(0)
+                tartarugac.pensize(5)
+                tartarugac.penup()
+                tartarugac.setpos(-150 , 55)
+                tartarugac.pendown()
+                tartarugac.circle(20)
+                e1 = 1
+        
+            if erros == 2 and e2 == 0:
+                tartarugac.penup()
+                tartarugac.pensize(5)
+                tartarugac.setpos(-150 , 55)
+                tartarugac.pendown()
+                tartarugac.right(90)
+                tartarugac.forward(80)
+                e2 = 1            
+                
+            if erros == 3 and e3 == 0:
+                tartarugac.pensize(5)
+                tartarugac.penup()
+                tartarugac.setpos(-150 , 40)
+                tartarugac.pendown()
+                tartarugac.right(30)
+                tartarugac.forward(30)
+                e3 = 1
+                
+                
+            if erros == 4 and e4 == 0:
+                
+                tartarugac.pensize(5)
+                tartarugac.penup()
+                tartarugac.setpos(-150 , 40)
+                tartarugac.pendown()
+                tartarugac.left(80)
+                tartarugac.forward(30)
+                e4 = 1
+            if erros == 5 and e5 == 0:
+                tartarugac.penup()
+                tartarugac.pensize(5)
+                tartarugac.setpos(-150 , -25)
+                tartarugac.pendown()
+                tartarugac.right(80)
+                tartarugac.forward(30)
+            
+                e5 = 1
+                
+            if erros == 6 and e6 == 0:
+                tartarugac.penup()
+                tartarugac.pensize(5)
+                tartarugac.setpos(-150 , -25)
+                tartarugac.pendown()
+                tartarugac.left(60)
+                tartarugac.forward(30)
+                e6 = 1
+                
+                
