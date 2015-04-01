@@ -289,3 +289,51 @@ while dnv == "sim" and len(lista) != 0:
                 e6 = 1
                 
                 
+   if acertos == x-len(espaco):
+        tortugam.write("Venceu", False, align="center",font=("Arial",70))
+        time.sleep(3)
+        tortugam.clear()
+        tortugam.pen(pencolor="blue")
+        tortugam.write("Chutes/Palavras:", False, align="center",font=("Arial",50))
+        time.sleep(2)
+        tortugam.clear()
+        tortugam.write(chutes/pal, False, align="center",font=("Arial",70))
+        time.sleep(2)
+        tortugam.pen(pencolor="red")
+        tortugam.clear()
+        acertos = 0
+        while dnv not in ["sim", "nao", "não"]:
+            dnv = tela.textinput("Jogar", "Quer jogar de novo?")
+        
+    
+    
+    
+    
+    if erros > 5:
+        
+        print("Morreu")
+        tortugam.write("Wasted", False, align="center",font=("Arial",80))
+        time.sleep(3)
+        tortugam.clear()
+        tortugam.pen(shown =False,fillcolor="red",pencolor="blue")
+        tortugam.write(palavra, False, align="center",font=("Arial",40))
+        tortugam.pen(shown =False,fillcolor="red",pencolor="red")
+        time.sleep(2)
+        tortugam.clear()
+        acertos = 0
+        erros = 0
+        
+        while dnv not in ["sim", "nao", "não"]:
+            dnv = tela.textinput("Jogar", "Quer jogar denovo?")
+            
+       
+    
+               
+
+forcaclear()
+tortugal.clear()
+tortugam.pen(shown =False,fillcolor="red",pencolor="green")
+tortugam.write("Obrigado por jogar!\n Click para Fechar", False, align="center",font=("Arial",30))    
+
+tela.exitonclick()
+
