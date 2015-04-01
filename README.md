@@ -55,4 +55,17 @@ def desenharforca():
     tartarugaf.penup()
     tartarugaf.pen(shown =False,fillcolor="red",pencolor="black")  
     
+tortugam = turtle.Turtle()
+tortugam.pen(shown =False,fillcolor="red",pencolor="red")
+
+
+tartarugac = turtle.Turtle()
+tartarugac.penup()
+tartarugac.pen(shown =False,fillcolor="red",pencolor="red")
+
+def forcaclear():
+    tartarugac.clear()
+    tortuga.clear()
+    
+    
  
