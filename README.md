@@ -196,3 +196,38 @@ while dnv == "sim" and len(lista) != 0:
                 chutes +=1
         
             w = 0
+         if chutee in letras and chutee in teste and len(chute) == 1 and chutee not in tentativas:
+                    
+                    
+                    tentativas.append(chutee)
+                    n = 0        
+                    
+                    
+                    
+                    
+                    
+                    print("Parabéns você acertou ")
+                    
+                    while n < len(palavra):              
+                        
+                        if letras[n] == chutee:
+    
+                           
+                            
+                            
+                
+                            
+                            tortugal.setpos(n*34-x*16,-290)
+                    
+                            tortugal.write(chutee, False, align="center",font=("Arial",25))
+                
+                            acertos += 1
+                                   
+                         
+                            
+                        n +=1
+                        
+            elif chutee not in tentativas and (chute  in teste2 or chute in teste) and chutee not in(acento):
+                    erros += 1
+                    tentativas.append(chutee)
+                    print("Que burro da 0 pra ele ")    
