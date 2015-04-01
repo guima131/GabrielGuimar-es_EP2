@@ -1,4 +1,3 @@
-# GabrielGuimar-es_EP2
 # -*- coding: utf-8 -*-
 """
 Created on Thu Mar 26 00:53:29 2015
@@ -55,6 +54,7 @@ def desenharforca():
     tartarugaf.penup()
     tartarugaf.pen(shown =False,fillcolor="red",pencolor="black")  
     
+    
 tortugam = turtle.Turtle()
 tortugam.pen(shown =False,fillcolor="red",pencolor="red")
 
@@ -66,7 +66,7 @@ tartarugac.pen(shown =False,fillcolor="red",pencolor="red")
 def forcaclear():
     tartarugac.clear()
     tortuga.clear()
-    
+
 def tortugalsetposwrite(X,Y):
     global acertos
     global acento
@@ -100,8 +100,9 @@ def underline(X):
             tortuga.write("_ ", False, align="left",font=("Arial",30))
             
         i +=1 
-    
- 
+
+
+
 chutes = 0
 pal = 0
 dnv = "sim"
@@ -137,7 +138,8 @@ while dnv == "sim" and len(lista) != 0:
         if start!= -1:
             start += 1
             
-  del espaco[-1]
+    
+    del espaco[-1]
     
     del lista[pn]
     
@@ -160,6 +162,8 @@ while dnv == "sim" and len(lista) != 0:
         else:
             tortuga.write("_ ", False, align="left",font=("Arial",30))
         i +=1
+    
+    
     
     
     
@@ -196,7 +200,33 @@ while dnv == "sim" and len(lista) != 0:
                 chutes +=1
         
             w = 0
-         if chutee in letras and chutee in teste and len(chute) == 1 and chutee not in tentativas:
+    
+            
+            if chutee in tentativas:
+                
+                
+                   tortugam.write("Já inserido", False, align="center",font=("Arial",40))
+                   time.sleep(1)
+                   tortugam.clear()
+                
+            while w < len(palavra):
+    
+                            tortugalsetposwrite("Ã","A")
+                            tortugalsetposwrite("Á","A")
+                            tortugalsetposwrite("Â","A")
+                            tortugalsetposwrite("À","A")
+                            tortugalsetposwrite("É","E")
+                            tortugalsetposwrite("Í","I")
+                            tortugalsetposwrite("Ó","O")
+                            tortugalsetposwrite("Ò","O")
+                            tortugalsetposwrite("Õ","O")
+                            tortugalsetposwrite("Ô","O")
+                            tortugalsetposwrite("Ú","U")
+    
+                            w +=1    
+                           
+                       
+            if chutee in letras and chutee in teste and len(chute) == 1 and chutee not in tentativas:
                     
                     
                     tentativas.append(chutee)
@@ -230,8 +260,14 @@ while dnv == "sim" and len(lista) != 0:
             elif chutee not in tentativas and (chute  in teste2 or chute in teste) and chutee not in(acento):
                     erros += 1
                     tentativas.append(chutee)
-                    print("Que burro da 0 pra ele ")    
-                      
+                    print("Que burro da 0 pra ele ")
+                          
+    
+                   
+            
+            
+            
+            
             if erros == 1 and e1 == 0:
                 tartarugac.setheading(0)
                 tartarugac.pensize(5)
@@ -289,7 +325,8 @@ while dnv == "sim" and len(lista) != 0:
                 e6 = 1
                 
                 
-   if acertos == x-len(espaco):
+                
+    if acertos == x-len(espaco):
         tortugam.write("Venceu", False, align="center",font=("Arial",70))
         time.sleep(3)
         tortugam.clear()
@@ -337,3 +374,6 @@ tortugam.write("Obrigado por jogar!\n Click para Fechar", False, align="center",
 
 tela.exitonclick()
 
+
+
+    
