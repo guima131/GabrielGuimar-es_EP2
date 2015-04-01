@@ -67,5 +67,38 @@ def forcaclear():
     tartarugac.clear()
     tortuga.clear()
     
+def tortugalsetposwrite(X,Y):
+    global acertos
+    global acento
+    global chutes
+    
+    if letras[w] == X and chutee == Y and Y not in acento:
+        
+        tortugal.setpos(w*35-x*16,-290)
+                    
+        tortugal.write(X, False, align="center",font=("Arial",25))
+        
+        acento.append(Y)
+        chutes +=1                   
+        acertos += 1
+    
+def underline(X):
+    i = 0
+    while i != X:
+        
+        
+        
+        tortuga.setpos(i*35-X*17.5,-300)
+        
+    
+    
+ 
+        if palavra[i] == " " :
+            
+            tortuga.write(" ", False, align="left",font=("Arial",30))
+        else:
+            tortuga.write("_ ", False, align="left",font=("Arial",30))
+            
+        i +=1 
     
  
