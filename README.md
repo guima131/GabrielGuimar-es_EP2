@@ -102,3 +102,38 @@ def underline(X):
         i +=1 
     
  
+chutes = 0
+pal = 0
+dnv = "sim"
+
+while dnv == "sim" and len(lista) != 0:
+    forcaclear()
+    tortugal.clear()
+    erros = 0
+    acertos = 0
+    
+    acento = []
+    
+    
+    
+
+    n= len(lista) - 1
+    pn = random.randint(0,n)
+    palavra = lista[pn] #escolha palavra
+    
+    palavram = palavra.upper()
+    
+    pal +=1
+    
+    x= len(palavra)#qnts espaços
+    
+    espaco = []
+    letras = []
+    
+    start = 0
+    while start != -1:
+        start = palavra.find(" ", start)
+        espaco.append(start)
+        if start!= -1:
+            start += 1
+            
