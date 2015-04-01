@@ -137,3 +137,29 @@ while dnv == "sim" and len(lista) != 0:
         if start!= -1:
             start += 1
             
+  del espaco[-1]
+    
+    del lista[pn]
+    
+    t = 0
+    
+    while t != x: #x = len(palavra)
+        letras.append(palavra[t].upper()) #letras
+        t += 1
+    
+    
+    
+    i = 0
+    while i != x: #x = len(palavra)
+        
+        
+        tortuga.setpos(i*35-x*17.5,-300)
+        if palavra[i] == " " :
+            
+            tortuga.write(" ", False, align="left",font=("Arial",30))
+        else:
+            tortuga.write("_ ", False, align="left",font=("Arial",30))
+        i +=1
+    
+    
+    
