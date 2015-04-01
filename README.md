@@ -163,3 +163,36 @@ while dnv == "sim" and len(lista) != 0:
     
     
     
+    tentativas = []
+    
+    teste = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    teste2 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    
+    e1 = 0
+    e2 = 0
+    e3 = 0
+    e4 = 0        
+    e5 = 0        
+    e6 = 0 
+    
+    
+        
+    desenharforca()    
+    underline(x)
+    
+    
+    
+    
+    while acertos < x-len(espaco) and erros != 6: #x = len(palavra)
+        
+        dnv = 0
+        if erros != 6:
+        
+               
+            chute = tela.textinput("Chute", "Qual seu chute?")
+            if type(chute) != type(None):
+                
+                chutee = chute.upper()
+                chutes +=1
+        
+            w = 0
